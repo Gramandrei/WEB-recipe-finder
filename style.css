@@ -6,8 +6,11 @@
 }
 
 body {
-  background: #fafafa;
-  padding: 20px;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; /* makes text more visible */
 }
 
 header {
@@ -93,6 +96,8 @@ body.dark .recipe-card {
 
 body.dark button {
   background-color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
 }
 
 body.dark input {
@@ -108,10 +113,13 @@ body.dark input {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
 }
 
 .recipe-card button:hover {
   background: #ff5722;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -131,4 +139,11 @@ header {
   input {
     width: 300px;
   }
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #009688;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
